@@ -570,41 +570,41 @@
 
 
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
-    int arr[10],i;
-    int num, pos;
+// int main() {
+//     int arr[10],i;
+//     int num, pos;
 
-    // Input 10 numbers into the array
-    printf("Enter 10 numbers:\n");
-    for (i = 0; i < 10; i++) {
-        printf("Enter number ");
-        scanf("%d", &arr[i]);
-    }
+//     // Input 10 numbers into the array
+//     printf("Enter 10 numbers:\n");
+//     for (i = 0; i < 10; i++) {
+//         printf("Enter number ");
+//         scanf("%d", &arr[i]);
+//     }
 
-    // Input number to insert and position
-    printf("\nEnter the number to insert: ");
-    scanf("%d", &num);
-    printf("Enter the position to insert (0-9): ");
-    scanf("%d", &pos);
+//     // Input number to insert and position
+//     printf("\nEnter the number to insert: ");
+//     scanf("%d", &num);
+//     printf("Enter the position to insert (0-9): ");
+//     scanf("%d", &pos);
 
-    // Shift elements to make space for the new number
-    for (i = 9; i >= pos; i--) {
-        arr[i + 1] = arr[i];
-    }
+//     // Shift elements to make space for the new number
+//     for (i = 9; i >= pos; i--) {
+//         arr[i + 1] = arr[i];
+//     }
 
-    // Insert the number at the specified position
-    arr[pos] = num;
+//     // Insert the number at the specified position
+//     arr[pos] = num;
 
-    // Display the updated array
-    printf("\nArray after insertion:\n");
-    for (int i = 0; i < 10; i++) {
-        printf("%d ", arr[i]);
-    }
+//     // Display the updated array
+//     printf("\nArray after insertion:\n");
+//     for (int i = 0; i < 10; i++) {
+//         printf("%d ", arr[i]);
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
 
 
 
@@ -1195,34 +1195,28 @@ int main() {
 
 
 
-// #include<stdio.h>
-// #include<string.h>
-// int main(){
-//     char a[100] = "ramesh";
-//     printf("%s",strupr(strrev(a)));
-//     return 0;
-// }
 
 
-// #include<stdio.h>
-// #include<string.h>
-// int main(){
-//     char a[100] = "ramesh";
-//     char c[100];
-//     int i,b,j;
-//     b = strlen(a);
-//     for(i=b-1;i>=0;i--){
-//         c[j]=a[i];
-//         j++;
+
+#include<stdio.h>
+#include<string.h>
+int main(){
+    char a[100] = "ramesh";
+    char c[100];
+    int i,b,j;
+    b = strlen(a);
+    for(i=b-1;i>=0;i--){
+        c[j]=a[i];
+        j++;
         
 
 
 
-//     }
-//     printf("\n%s",c);
-//     return 0;
+    }
+    printf("\n%s",c);
+    return 0;
 
-// }
+}
 
 
 
